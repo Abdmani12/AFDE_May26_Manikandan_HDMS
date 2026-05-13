@@ -1,0 +1,200 @@
+.page {
+  padding: 28px 32px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── Top bar ── */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13px;
+}
+
+.bcBtn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bcBtn:hover { color: #e30613; text-decoration: underline; }
+
+.bcSep {
+  color: #aaa;
+  margin: 0 6px;
+  font-size: 11px;
+}
+
+.bcActive {
+  color: #e30613;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.topActions {
+  display: flex;
+  gap: 8px;
+}
+
+.btnEdit, .btnDelete {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btnEdit {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.btnDelete {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.btnEdit:hover   { background: #fde68a; }
+.btnDelete:hover { background: #fecaca; }
+
+/* ── Card ── */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #e5e7eb;
+}
+
+/* ── Title row ── */
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.titleLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ticketId {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e30613;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+.ticketTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Info grid ── */
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.infoLabel {
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.infoVal {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* ── Sections ── */
+.section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.sectionBody {
+  font-size: 14.5px;
+  color: #334155;
+  line-height: 1.65;
+}
+
+/* ── Loading ── */
+.loadingWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 100px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #e30613;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }

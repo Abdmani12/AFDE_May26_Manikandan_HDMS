@@ -1,0 +1,136 @@
+.page {
+  padding: 28px 32px 40px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.headLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #e30613;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.backBtn:hover { background: #fef2f2; }
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.filterCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .filterGrid { grid-template-columns: 1fr 1fr; }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.field input,
+.field select {
+  padding: 9px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 13.5px;
+  color: #1e293b;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #e30613;
+  box-shadow: 0 0 0 3px rgba(227,6,19,0.07);
+}
+
+.btnRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btnReset {
+  padding: 9px 22px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btnReset:hover { background: #e2e8f0; }
+
+.btnSearch {
+  padding: 9px 26px;
+  background: #e30613;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btnSearch:hover    { background: #b8050f; }
+.btnSearch:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.resultCount {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+  font-weight: 500;
+}

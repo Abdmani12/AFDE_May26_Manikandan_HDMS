@@ -1,0 +1,213 @@
+.page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04);
+  width: 100%;
+  max-width: 440px;
+  padding: 44px 44px 36px;
+}
+
+/* ── Brand ── */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+
+.brandName {
+  font-size: 22px;
+  font-weight: 800;
+  color: #e30613;
+  letter-spacing: -0.5px;
+  font-style: italic;
+}
+
+/* ── Typography ── */
+.heading {
+  font-size: 24px;
+  font-weight: 300;
+  color: #1b1b1b;
+  margin: 0 0 20px;
+  letter-spacing: -0.2px;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #6b7280;
+  margin: -12px 0 16px;
+}
+
+/* ── Form ── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.row2 .field {
+  margin-bottom: 0;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #666;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #1b1b1b;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-bottom-color: #0067b8;
+  border-bottom-width: 2px;
+}
+
+select.input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+select.input:focus {
+  border-color: #0067b8;
+  border-width: 1px;
+}
+
+/* ── Password with eye toggle ── */
+.passwordWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordWrap .input {
+  padding-right: 34px;
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+}
+
+/* ── Email chip (after step 1) ── */
+.emailRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.emailChip {
+  font-size: 13.5px;
+  color: #1b1b1b;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 4px 12px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Links ── */
+.links {
+  font-size: 13px;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+}
+
+.linkBtn {
+  background: none;
+  border: none;
+  color: #0067b8;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
+.linkBtn:hover { text-decoration: underline; }
+
+/* ── Error ── */
+.errorMsg {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 4px;
+  color: #b91c1c;
+  font-size: 13px;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+}
+
+/* ── Buttons ── */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btnPrimary {
+  background: #0067b8;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 108px;
+  transition: background 0.15s;
+}
+
+.btnPrimary:hover:not(:disabled) { background: #005a9e; }
+.btnPrimary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btnBack {
+  background: #e5e7eb;
+  color: #1b1b1b;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 7px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btnBack:hover { background: #d1d5db; }

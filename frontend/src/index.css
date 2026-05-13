@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --prodapt-red: #e30613;
+  --prodapt-red-dark: #b8050f;
+  --prodapt-red-light: #fef2f2;
+  --navy: #1e293b;
+  --navy-light: #334155;
+  --gray-500: #64748b;
+  --gray-400: #94a3b8;
+  --gray-200: #e2e8f0;
+  --gray-100: #f1f5f9;
+  --gray-50: #f8fafc;
+  --white: #ffffff;
+  --bg: #f5f6f8;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--navy);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ── Status & Priority Badges ── */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Status */
+.badge-open       { background: #dbeafe; color: #1d4ed8; }
+.badge-inprogress { background: #fef3c7; color: #92400e; }
+.badge-resolved   { background: #d1fae5; color: #065f46; }
+.badge-closed     { background: #e5e7eb; color: #374151; }
+
+/* Priority */
+.badge-low      { background: #d1fae5; color: #065f46; }
+.badge-medium   { background: #fef3c7; color: #92400e; }
+.badge-high     { background: #fee2e2; color: #991b1b; }
+.badge-critical { background: #fce7f3; color: #9d174d; }
+
+/* ── Shared page layout ── */
+.prodapt-page {
+  padding: 28px 32px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+/* ── Prodapt breadcrumb bar ── */
+.breadcrumb-bar {
+  background: #f0f1f3;
+  border-bottom: 1px solid var(--gray-200);
+  padding: 6px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.breadcrumb-bar a,
+.breadcrumb-bar span {
+  color: var(--gray-500);
+}
+
+.breadcrumb-bar .bc-active {
+  color: var(--prodapt-red);
+  font-weight: 600;
+}
+
+.breadcrumb-sep {
+  margin: 0 6px;
+  color: #aaa;
+}
