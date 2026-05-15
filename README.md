@@ -1,92 +1,19 @@
-# Helpdesk Ticket Management System (HDMS)
+# AFDE_May26_Manikandan — Monorepo
 
-A full-stack web application for managing internal IT support tickets.
+This repository contains multiple projects managed as a monorepo.
 
-## Tech Stack
+## Projects
 
-| Layer    | Technology       |
-|----------|-----------------|
-| Frontend | React + Vite     |
-| Backend  | Python FastAPI   |
-| Database | SQLite           |
-| API Test | Postman          |
-| Version  | Git / GitHub     |
+| Folder | Description |
+|--------|-------------|
+| [Project-1_HDMS](./Project-1_HDMS/) | Hospital/Health Data Management System |
+| [Project-2_LMS](./Project-2_LMS/)   | Library Management System              |
 
-## Features
-
-- Create, view, update, delete support tickets
-- Filter tickets by status, category, priority
-- Keyword search across tickets
-- Dashboard with live stats summary
-- Responsive, clean UI
-
-## Project Structure
+## Structure
 
 ```
-project-1/
-├── frontend/          # React + Vite app
-│   └── src/
-│       ├── components/    # Navbar, TicketTable, StatusBadge
-│       ├── pages/         # Dashboard, CreateTicket, TicketList, TicketDetails, EditTicket, SearchFilter
-│       └── services/      # api.js (Axios)
-├── backend/           # FastAPI app
-│   ├── main.py
-│   ├── database.py
-│   ├── models.py
-│   ├── schemas.py
-│   ├── crud.py
-│   └── routers/tickets.py
-├── database/
-│   └── schema.sql
-└── screenshots/
+├── Project-1_HDMS/    # HDMS project (backend, frontend, database)
+└── Project-2_LMS/     # LMS project (backend, frontend)
 ```
 
-## Setup Instructions
-
-### Backend
-
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate        # Windows
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-API runs at: http://localhost:8000  
-Swagger docs: http://localhost:8000/docs
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-App runs at: http://localhost:5173
-
-## API Endpoints
-
-| Method | Endpoint             | Description           |
-|--------|---------------------|-----------------------|
-| GET    | /tickets/           | Get all tickets       |
-| GET    | /tickets/{id}       | Get ticket by ID      |
-| POST   | /tickets/           | Create ticket         |
-| PUT    | /tickets/{id}       | Update ticket         |
-| DELETE | /tickets/{id}       | Delete ticket         |
-| GET    | /tickets/search     | Search/filter tickets |
-
-## Database Schema
-
-| Column           | Type     |
-|-----------------|----------|
-| ticket_id        | INTEGER  |
-| employee_name    | VARCHAR  |
-| department       | VARCHAR  |
-| issue_category   | VARCHAR  |
-| description      | TEXT     |
-| priority         | VARCHAR  |
-| status           | VARCHAR  |
-| resolution_notes | TEXT     |
-| created_at       | DATETIME |
+Each project has its own `README.md` with setup and run instructions.

@@ -1,0 +1,149 @@
+from sqlalchemy.orm import Session
+from sqlalchemy import or_
+from datetime import datetime
+import models
+import schemas
+
+
+# ── Books ──────────────────────────────────────────────
+def get_books(db: Session):
+    return db.query(models.Book).all()
+
+
+def get_book(db: Session, book_id: int):
+    return db.query(models.Book).filter(models.Book.book_id == book_id).first()
+
+
+def create_book(db: Session, book: schemas.BookCreate):
+    db_book = models.Book(**book.model_dump())
+    db.add(db_book)
+    db.commit()
+    db.refresh(db_book)
+    return db_book
+
+
+def update_book(db: Session, book_id: int, book: schemas.BookUpdate):
+    db_book = get_book(db, book_id)
+    if not db_book:
+        return None
+    for field, value in book.model_dump().items():
+        setattr(db_book, field, value)
+    db.commit()
+    db.refresh(db_book)
+    return db_book
+
+
+def delete_book(db: Session, book_id: int):
+    db_book = get_book(db, book_id)
+    if not db_book:
+        return None
+    db.delete(db_book)
+    db.commit()
+    return db_book
+
+
+# ── Borrowers ──────────────────────────────────────────
+def get_borrowers(db: Session):
+    return db.query(models.Borrower).all()
+
+
+def get_borrower(db: Session, borrower_id: int):
+    return db.query(models.Borrower).filter(models.Borrower.borrower_id == borrower_id).first()
+
+
+def create_borrower(db: Session, borrower: schemas.BorrowerCreate):
+    db_borrower = models.Borrower(**borrower.model_dump())
+    db.add(db_borrower)
+    db.commit()
+    db.refresh(db_borrower)
+    return db_borrower
+
+
+def update_borrower(db: Session, borrower_id: int, borrower: schemas.BorrowerUpdate):
+    db_borrower = get_borrower(db, borrower_id)
+    if not db_borrower:
+        return None
+    for field, value in borrower.model_dump().items():
+        setattr(db_borrower, field, value)
+    db.commit()
+    db.refresh(db_borrower)
+    return db_borrower
+
+
+def delete_borrower(db: Session, borrower_id: int):
+    db_borrower = get_borrower(db, borrower_id)
+    if not db_borrower:
+        return None
+    db.delete(db_borrower)
+    db.commit()
+    return db_borrower
+
+
+# ── Transactions ───────────────────────────────────────
+def get_transactions(db: Session):
+    txns = db.query(models.Transaction).order_by(models.Transaction.borrow_date.desc()).all()
+    result = []
+    for t in txns:
+        result.append(schemas.TransactionDetail(
+            transaction_id=t.transaction_id,
+            book_id=t.book_id,
+            borrower_id=t.borrower_id,
+            borrow_date=t.borrow_date,
+            return_date=t.return_date,
+            book_title=t.book.title if t.book else None,
+            book_author=t.book.author if t.book else None,
+            borrower_name=t.borrower.borrower_name if t.borrower else None,
+            borrower_email=t.borrower.email if t.borrower else None,
+        ))
+    return result
+
+
+def borrow_book(db: Session, data: schemas.TransactionCreate):
+    book = get_book(db, data.book_id)
+    if not book or book.availability_status != "Available":
+        return None, "Book is not available"
+    borrower = get_borrower(db, data.borrower_id)
+    if not borrower:
+        return None, "Borrower not found"
+
+    txn = models.Transaction(
+        book_id=data.book_id,
+        borrower_id=data.borrower_id,
+        borrow_date=datetime.utcnow(),
+    )
+    book.availability_status = "Borrowed"
+    db.add(txn)
+    db.commit()
+    db.refresh(txn)
+    return txn, None
+
+
+def return_book(db: Session, data: schemas.ReturnBook):
+    txn = db.query(models.Transaction).filter(
+        models.Transaction.transaction_id == data.transaction_id
+    ).first()
+    if not txn:
+        return None, "Transaction not found"
+    if txn.return_date is not None:
+        return None, "Book already returned"
+
+    txn.return_date = datetime.utcnow()
+    book = get_book(db, txn.book_id)
+    if book:
+        book.availability_status = "Available"
+    db.commit()
+    db.refresh(txn)
+    return txn, None
+
+
+# ── Search ─────────────────────────────────────────────
+def search_books(db: Session, query: str):
+    q = f"%{query}%"
+    return db.query(models.Book).filter(
+        or_(
+            models.Book.title.ilike(q),
+            models.Book.author.ilike(q),
+            models.Book.category.ilike(q),
+            models.Book.isbn.ilike(q),
+        )
+    ).all()
