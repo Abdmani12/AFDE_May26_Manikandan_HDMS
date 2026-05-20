@@ -14,3 +14,18 @@ export const searchTickets = (params) => API.get('/tickets/search', { params })
 export const checkEmail = (email) => API.post('/auth/check-email', { email })
 export const registerUser = (data) => API.post('/auth/register', data)
 export const loginUser = (data) => API.post('/auth/login', data)
+
+// ── Analytics APIs ────────────────────────────────────────────────────────────
+export const getAnalyticsOverview = () => API.get('/analytics/overview')
+export const getCategoryDistribution = (source = 'historical') => API.get('/analytics/category-distribution', { params: { source } })
+export const getPriorityDistribution = (source = 'historical') => API.get('/analytics/priority-distribution', { params: { source } })
+export const getDepartmentSummary = (source = 'historical') => API.get('/analytics/department-summary', { params: { source } })
+export const getResolutionTrends = () => API.get('/analytics/resolution-trends')
+export const getHistoricalTickets = (params) => API.get('/analytics/historical-tickets', { params })
+export const getHistoricalTicketsCount = () => API.get('/analytics/historical-tickets/count')
+
+// ── ETL APIs ──────────────────────────────────────────────────────────────────
+export const runETL = (payload = { clear_existing: true }) => API.post('/etl/run', payload)
+export const uploadAndRunETL = (formData) => API.post('/etl/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+export const getETLStatus = () => API.get('/etl/status')
+export const getETLRuns = (limit = 20) => API.get('/etl/runs', { params: { limit } })

@@ -6,6 +6,8 @@ import CreateTicket from './pages/CreateTicket'
 import TicketDetails from './pages/TicketDetails'
 import EditTicket from './pages/EditTicket'
 import SearchFilter from './pages/SearchFilter'
+import Analytics from './pages/Analytics'
+import ETLPipeline from './pages/ETLPipeline'
 import Login from './pages/Login'
 import { NotificationProvider } from './context/NotificationContext'
 import { AuthProvider, useAuth } from './context/AuthContext'
@@ -61,6 +63,30 @@ function Sidebar() {
         </svg>
       ),
     },
+    {
+      title: 'Analytics',
+      path: '/analytics',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6">
+          <polyline points="2 16 7 9 11 13 15 7 18 10"/>
+          <line x1="2" y1="18" x2="18" y2="18"/>
+        </svg>
+      ),
+    },
+    {
+      title: 'ETL Pipeline',
+      path: '/etl',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6">
+          <circle cx="10" cy="5" r="2"/>
+          <circle cx="5" cy="15" r="2"/>
+          <circle cx="15" cy="15" r="2"/>
+          <line x1="10" y1="7" x2="10" y2="11"/>
+          <line x1="10" y1="11" x2="5" y2="13"/>
+          <line x1="10" y1="11" x2="15" y2="13"/>
+        </svg>
+      ),
+    },
   ]
 
   return (
@@ -100,6 +126,8 @@ function ProtectedLayout() {
             <Route path="/tickets/:id" element={<TicketDetails />} />
             <Route path="/tickets/:id/edit" element={<EditTicket />} />
             <Route path="/search" element={<SearchFilter />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/etl" element={<ETLPipeline />} />
           </Routes>
         </main>
       </div>

@@ -2,13 +2,14 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base
 from routers import tickets, auth
+from routers import analytics, etl as etl_router
 
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Helpdesk Ticket Management System",
-    description="REST API for managing internal IT support tickets",
-    version="1.0.0",
+    description="REST API for managing internal IT support tickets with ETL analytics",
+    version="2.0.0",
 )
 
 app.add_middleware(
@@ -21,6 +22,8 @@ app.add_middleware(
 
 app.include_router(tickets.router)
 app.include_router(auth.router)
+app.include_router(analytics.router)
+app.include_router(etl_router.router)
 
 
 @app.get("/")

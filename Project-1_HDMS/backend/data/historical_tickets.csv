@@ -1,0 +1,202 @@
+employee_name,department,issue_category,description,priority,status,created_at,resolved_at
+Karthik Subramanian,IT,VPN Issue,Unable to connect to VPN from home office after recent policy update,High,Resolved,2024-01-05 09:00:00,2024-01-05 14:30:00
+Sunita Nair,HR,VPN Issue,VPN disconnects every 30 minutes during remote work sessions,Medium,Resolved,2024-01-08 10:15:00,2024-01-09 11:00:00
+Arjun Krishnamurthy,Finance,VPN Issue,VPN client crashes on Windows 11 after recent security update,High,Resolved,2024-01-12 08:30:00,2024-01-13 10:00:00
+Rajesh Natarajan,Operations,VPN Issue,Cannot authenticate to VPN with new credentials assigned by IT,Critical,Resolved,2024-01-18 14:00:00,2024-01-18 16:45:00
+Rohit Gopalakrishnan,Marketing,VPN Issue,VPN connection extremely slow making remote work unproductive,Medium,Closed,2024-02-03 09:30:00,2024-02-05 11:00:00
+Sunil Nambiar,Sales,VPN Issue,VPN token expired and unable to renew from remote location,High,Resolved,2024-02-10 11:00:00,2024-02-10 15:30:00
+Ashwin Thirumalai,Engineering,VPN Issue,Split tunneling configuration not working as expected,Low,Closed,2024-03-01 10:00:00,2024-03-04 14:00:00
+Priya Krishnan,IT,VPN Issue,VPN profile missing after laptop OS reinstall last week,Medium,Resolved,2024-03-15 13:00:00,2024-03-15 17:00:00
+Karthik Subramaniam,HR,VPN Issue,Two-factor authentication failing repeatedly for VPN login,High,Resolved,2024-04-02 09:00:00,2024-04-02 12:30:00
+Neha Thyagarajan,Finance,VPN Issue,VPN not connecting from international business travel location,Critical,Resolved,2024-05-08 07:30:00,2024-05-08 10:00:00
+Kavya Ramaswamy,Operations,VPN Issue,VPN client not compatible with newly issued laptop model,Medium,Resolved,2024-06-12 10:30:00,2024-06-13 09:00:00
+Arun Balakrishnan,Marketing,VPN Issue,Unable to access internal resources through VPN tunnel,High,In Progress,2024-07-20 14:00:00,
+Anitha Natarajan,Sales,VPN Issue,VPN configuration lost after mandatory password change,Medium,Resolved,2024-08-05 09:00:00,2024-08-06 10:00:00
+Swathi Krishnamurthy,Engineering,VPN Issue,VPN keeps dropping connection on office corporate WiFi,Low,Closed,2024-09-10 11:00:00,2024-09-12 14:00:00
+Sriram Venkatesh,IT,VPN Issue,VPN license error preventing simultaneous user connections,High,Open,2024-10-15 09:30:00,
+Vikram Chandrasekaran,IT,VPN Issue,New VPN gateway migration causing authentication failures for users,Critical,Resolved,2025-01-05 09:00:00,2025-01-06 10:00:00
+Sanjay Padmanabhan,IT,VPN Issue,VPN policy update blocking remote desktop protocol access,High,Resolved,2025-02-12 10:00:00,2025-02-13 09:00:00
+Deepa Sundaram,IT,VPN Issue,VPN connection timeout issue for users on fiber broadband,Medium,Resolved,2025-03-08 14:00:00,2025-03-09 10:00:00
+Meena Subramaniam,HR,VPN Issue,HR team unable to access payroll system through VPN remotely,High,Resolved,2025-01-20 09:00:00,2025-01-21 11:00:00
+Rajan Pillai,HR,VPN Issue,VPN certificate renewal required for department shared account,Medium,Resolved,2025-02-18 10:00:00,2025-02-19 09:00:00
+Riya Pillai,Finance,VPN Issue,VPN access blocked for finance user after role change,High,Resolved,2025-03-15 09:30:00,2025-03-16 10:00:00
+Suresh Venkataraman,Finance,VPN Issue,VPN bandwidth insufficient for video conferencing sessions,Medium,Closed,2025-01-28 14:00:00,2025-01-30 10:00:00
+Nisha Murthy,Operations,VPN Issue,VPN not routing warehouse management system traffic correctly,Critical,Resolved,2025-02-05 08:00:00,2025-02-05 14:00:00
+Dinesh Raghavan,Operations,VPN Issue,VPN group policy preventing access to operations dashboard,High,Resolved,2025-03-20 10:00:00,2025-03-21 09:00:00
+Shreya Balakrishnan,Marketing,VPN Issue,Marketing tools inaccessible due to VPN IP restriction policy,Medium,In Progress,2025-04-10 14:00:00,
+Divya Anand,Marketing,VPN Issue,VPN connection unstable causing lost work during peak hours,High,Resolved,2025-02-22 09:00:00,2025-02-23 11:00:00
+Varun Narayanan,Sales,VPN Issue,Sales CRM not loading over VPN from client site,High,Resolved,2025-01-14 10:00:00,2025-01-15 09:00:00
+Pallavi Raghunathan,Sales,VPN Issue,VPN keeps prompting for credentials every session start,Low,Closed,2025-03-05 11:00:00,2025-03-07 14:00:00
+Nikhil Ananthakrishnan,Engineering,VPN Issue,Development environment unreachable via VPN from remote site,Critical,Resolved,2025-02-28 09:00:00,2025-02-28 16:00:00
+Preethi Rajan,Engineering,VPN Issue,VPN split DNS not resolving internal hostnames correctly,Medium,Resolved,2025-04-02 10:00:00,2025-04-03 09:00:00
+Karthik Subramanian,IT,Password Reset,Account locked after multiple failed login attempts today,High,Resolved,2024-01-06 10:00:00,2024-01-06 11:30:00
+Meena Subramaniam,HR,Password Reset,Forgot password after returning from extended medical leave,Medium,Resolved,2024-01-10 09:30:00,2024-01-10 10:00:00
+Suresh Venkataraman,Finance,Password Reset,Password expired and cannot self-reset through self-service portal,Medium,Resolved,2024-01-20 14:30:00,2024-01-20 15:00:00
+Nisha Murthy,Operations,Password Reset,Active Directory password reset required for new hire onboarding,Low,Resolved,2024-02-05 10:00:00,2024-02-05 10:30:00
+Shreya Balakrishnan,Marketing,Password Reset,Email password not syncing after user-initiated reset attempt,High,Resolved,2024-02-14 11:00:00,2024-02-14 13:30:00
+Varun Narayanan,Sales,Password Reset,Service account password needs urgent reset for integration job,Critical,Resolved,2024-03-05 08:00:00,2024-03-05 09:00:00
+Nikhil Ananthakrishnan,Engineering,Password Reset,SSO password reset not propagating to all connected systems,Medium,Resolved,2024-03-22 14:00:00,2024-03-23 10:00:00
+Ananya Raghavan,IT,Password Reset,Temporary password not working for newly created employee account,High,Resolved,2024-04-08 09:00:00,2024-04-08 10:15:00
+Rajan Pillai,HR,Password Reset,Password policy configuration preventing user from setting password,Medium,Resolved,2024-04-25 13:00:00,2024-04-25 14:30:00
+Riya Pillai,Finance,Password Reset,Cannot reset password due to phone number mismatch in system,High,Closed,2024-05-12 10:00:00,2024-05-13 09:00:00
+Dinesh Raghavan,Operations,Password Reset,Bulk password reset needed for department system migration,Critical,Resolved,2024-06-03 09:00:00,2024-06-03 12:00:00
+Divya Anand,Marketing,Password Reset,Password reset link expired before user could complete process,Low,Resolved,2024-07-08 14:00:00,2024-07-08 15:00:00
+Pallavi Raghunathan,Sales,Password Reset,User account disabled after too many consecutive password resets,High,Resolved,2024-08-15 09:30:00,2024-08-15 11:00:00
+Vikram Chandrasekaran,IT,Password Reset,Admin password recovery needed for critical service account,Critical,Resolved,2025-01-08 08:00:00,2025-01-08 10:00:00
+Sanjay Padmanabhan,IT,Password Reset,New IT staff account setup with temporary password not working,High,Resolved,2025-02-14 10:00:00,2025-02-14 12:00:00
+Deepa Sundaram,IT,Password Reset,Password complexity requirements causing confusion for end user,Low,Resolved,2025-03-10 09:00:00,2025-03-10 10:00:00
+Manikandan Ravi,IT,Password Reset,MFA device lost requiring password and MFA reset assistance,Critical,In Progress,2025-04-05 08:30:00,
+Pooja Venkataraman,HR,Password Reset,Employee password reset needed after system account migration,Medium,Resolved,2025-01-22 10:00:00,2025-01-22 11:00:00
+Karthik Subramaniam,HR,Password Reset,Password not accepted after company-wide security policy update,High,Resolved,2025-03-18 14:00:00,2025-03-19 09:00:00
+Arjun Krishnamurthy,Finance,Password Reset,Finance portal password reset failing due to browser cache issue,Medium,Resolved,2025-02-06 10:00:00,2025-02-06 11:30:00
+Rajesh Natarajan,Operations,Password Reset,Supervisor account locked out during critical operations shift,Critical,Resolved,2025-01-30 07:00:00,2025-01-30 08:30:00
+Rohit Gopalakrishnan,Marketing,Password Reset,Marketing platform password not syncing with Active Directory,High,Resolved,2025-02-25 09:00:00,2025-02-26 10:00:00
+Sunil Nambiar,Sales,Password Reset,Sales manager password expired during customer demo session,High,Resolved,2025-03-28 14:00:00,2025-03-28 15:30:00
+Ashwin Thirumalai,Engineering,Password Reset,CI/CD pipeline service account password needs scheduled reset,Medium,Closed,2025-04-12 10:00:00,2025-04-14 09:00:00
+Priya Krishnan,IT,Software Installation,Need Microsoft Office 365 installed on newly provisioned workstation,Medium,Resolved,2024-01-09 10:00:00,2024-01-09 15:00:00
+Sunita Nair,HR,Software Installation,HR management software requires upgrade to latest supported version,High,Resolved,2024-01-15 09:00:00,2024-01-16 14:00:00
+Arjun Krishnamurthy,Finance,Software Installation,Financial reporting tool installation failing with license error,High,Resolved,2024-01-25 11:00:00,2024-01-26 10:00:00
+Rajesh Natarajan,Operations,Software Installation,AutoCAD license not activating after fresh installation attempt,Critical,Resolved,2024-02-08 09:00:00,2024-02-08 16:00:00
+Rohit Gopalakrishnan,Marketing,Software Installation,Adobe Creative Suite installation blocked due to missing admin rights,Medium,Resolved,2024-02-20 14:30:00,2024-02-21 10:00:00
+Sunil Nambiar,Sales,Software Installation,CRM software major update breaking existing user customizations,High,Resolved,2024-03-10 10:00:00,2024-03-11 14:00:00
+Ashwin Thirumalai,Engineering,Software Installation,Development IDE not installing required extensions and plugins,Medium,Closed,2024-03-25 13:00:00,2024-03-27 10:00:00
+Ananya Raghavan,IT,Software Installation,Antivirus software conflict preventing new security tool installation,High,Resolved,2024-04-12 09:30:00,2024-04-12 14:00:00
+Karthik Subramaniam,HR,Software Installation,Payroll software update requiring full database migration process,Critical,Resolved,2024-05-06 08:00:00,2024-05-07 12:00:00
+Neha Thyagarajan,Finance,Software Installation,Tax calculation software installation on shared terminal server,High,Resolved,2024-06-01 10:00:00,2024-06-02 15:00:00
+Kavya Ramaswamy,Operations,Software Installation,ERP module installation causing significant system performance slowdown,Medium,In Progress,2024-07-15 14:00:00,
+Arun Balakrishnan,Marketing,Software Installation,Social media management tool setup and user configuration needed,Low,Resolved,2024-08-20 09:00:00,2024-08-21 10:00:00
+Vikram Chandrasekaran,IT,Software Installation,Python development environment and dependencies setup failing,Medium,Resolved,2025-01-12 10:00:00,2025-01-13 09:00:00
+Sanjay Padmanabhan,IT,Software Installation,Container orchestration tools installation failing on workstation,Medium,Resolved,2025-02-20 09:00:00,2025-02-21 10:00:00
+Deepa Sundaram,IT,Software Installation,Security compliance software not installing on older OS version,High,Resolved,2025-03-25 14:00:00,2025-03-26 10:00:00
+Manikandan Ravi,IT,Software Installation,Collaboration platform desktop app not launching after install,Low,Resolved,2025-04-08 09:00:00,2025-04-09 10:00:00
+Pooja Venkataraman,HR,Software Installation,HR onboarding tool upgrade failing with compatibility error,High,Resolved,2025-02-10 10:00:00,2025-02-11 14:00:00
+Rajan Pillai,HR,Software Installation,Learning management system installation needed for new training,Medium,Closed,2025-03-14 09:00:00,2025-03-15 11:00:00
+Riya Pillai,Finance,Software Installation,Budgeting software client installation failing with DLL error,High,Resolved,2025-01-18 14:00:00,2025-01-19 10:00:00
+Dinesh Raghavan,Operations,Software Installation,Warehouse scanning application update breaking barcode reader,Critical,Resolved,2025-02-24 09:00:00,2025-02-24 16:00:00
+Shreya Balakrishnan,Marketing,Software Installation,Analytics platform desktop extension installation not completing,Medium,Resolved,2025-03-30 10:00:00,2025-03-31 09:00:00
+Varun Narayanan,Sales,Software Installation,Sales enablement tool installation blocked by firewall policy,High,Open,2025-04-15 14:00:00,
+Nikhil Ananthakrishnan,Engineering,Software Installation,Build automation tools failing to install on CI server instance,High,In Progress,2025-01-28 10:00:00,
+Preethi Rajan,Engineering,Software Installation,Testing framework installation dependencies not resolving correctly,Medium,Resolved,2025-03-06 09:00:00,2025-03-07 10:00:00
+Sriram Venkatesh,IT,Laptop Issue,Laptop screen flickering and display artifacts appearing randomly,High,Resolved,2024-01-07 09:30:00,2024-01-08 12:00:00
+Meena Subramaniam,HR,Laptop Issue,Laptop battery draining completely within 2 hours of full charge,Medium,Resolved,2024-01-14 10:00:00,2024-01-16 15:00:00
+Suresh Venkataraman,Finance,Laptop Issue,Keyboard keys not responding intermittently affecting productivity,High,Closed,2024-01-22 14:00:00,2024-01-24 10:00:00
+Nisha Murthy,Operations,Laptop Issue,Laptop overheating and shutting down unexpectedly during work,Critical,Resolved,2024-02-06 09:00:00,2024-02-07 14:00:00
+Shreya Balakrishnan,Marketing,Laptop Issue,Laptop not booting after automatic Windows update installation,High,Resolved,2024-02-18 11:00:00,2024-02-19 10:00:00
+Varun Narayanan,Sales,Laptop Issue,External display not being detected by laptop HDMI port,Medium,Resolved,2024-03-08 10:00:00,2024-03-08 15:30:00
+Nikhil Ananthakrishnan,Engineering,Laptop Issue,Laptop RAM causing frequent blue screen errors during compile,Critical,Resolved,2024-03-20 09:00:00,2024-03-21 12:00:00
+Ananya Raghavan,IT,Laptop Issue,Webcam not functioning for video conferencing calls,Medium,Resolved,2024-04-10 14:00:00,2024-04-10 16:00:00
+Rajan Pillai,HR,Laptop Issue,Laptop touchpad stopped working completely and unexpectedly,High,Resolved,2024-05-03 09:00:00,2024-05-04 10:00:00
+Riya Pillai,Finance,Laptop Issue,Hard drive showing critical errors in disk health diagnostic,Critical,Closed,2024-06-08 10:30:00,2024-06-09 14:00:00
+Dinesh Raghavan,Operations,Laptop Issue,Laptop docking station not charging device when connected,Medium,Resolved,2024-07-12 09:00:00,2024-07-13 11:00:00
+Divya Anand,Marketing,Laptop Issue,Laptop speakers producing crackling and distorted sound output,Low,Closed,2024-08-18 14:00:00,2024-08-20 10:00:00
+Pallavi Raghunathan,Sales,Laptop Issue,Laptop running extremely slow after cumulative update install,High,In Progress,2024-09-25 10:00:00,
+Vikram Chandrasekaran,IT,Laptop Issue,New laptop BIOS configuration required for enterprise security policy,High,Resolved,2025-01-18 09:30:00,2025-01-19 14:00:00
+Sanjay Padmanabhan,IT,Laptop Issue,Laptop fingerprint reader not working after driver update,Medium,Resolved,2025-02-15 10:00:00,2025-02-16 09:00:00
+Deepa Sundaram,IT,Laptop Issue,Laptop thermal paste replacement needed due to overheating issue,High,Resolved,2025-03-22 09:00:00,2025-03-23 10:00:00
+Manikandan Ravi,IT,Laptop Issue,MacBook Pro kernel panic on startup after macOS update,Critical,Resolved,2025-04-14 08:00:00,2025-04-14 16:00:00
+Pooja Venkataraman,HR,Laptop Issue,Laptop charger port damaged causing intermittent charging issues,Medium,Resolved,2025-01-25 14:00:00,2025-01-27 10:00:00
+Karthik Subramaniam,HR,Laptop Issue,Laptop lid sensor malfunctioning preventing proper sleep mode,Low,Closed,2025-03-12 09:00:00,2025-03-14 10:00:00
+Arjun Krishnamurthy,Finance,Laptop Issue,Laptop SSD failing with read errors on financial database files,Critical,Resolved,2025-02-08 08:00:00,2025-02-09 14:00:00
+Rajesh Natarajan,Operations,Laptop Issue,Laptop USB-C port not recognizing peripheral devices,Medium,Resolved,2025-01-30 10:00:00,2025-02-01 09:00:00
+Rohit Gopalakrishnan,Marketing,Laptop Issue,Laptop WiFi card not detecting 5GHz network frequency,High,Resolved,2025-03-18 14:00:00,2025-03-19 10:00:00
+Sunil Nambiar,Sales,Laptop Issue,Laptop not waking from sleep mode during client presentations,High,Resolved,2025-04-08 09:00:00,2025-04-09 10:00:00
+Kavya Ramaswamy,Operations,Laptop Issue,Laptop fan making loud noise indicating hardware failure,Medium,Open,2025-04-20 10:00:00,
+Preethi Rajan,Engineering,Laptop Issue,Development laptop GPU not detected causing build slowdowns,High,Resolved,2025-02-28 09:00:00,2025-03-01 14:00:00
+Karthik Subramanian,IT,Email Access,Email account not syncing on mobile device after policy change,Medium,Resolved,2024-01-11 10:00:00,2024-01-11 14:00:00
+Sunita Nair,HR,Email Access,Cannot send emails with large HR report attachments,Low,Resolved,2024-01-16 09:00:00,2024-01-17 10:00:00
+Arjun Krishnamurthy,Finance,Email Access,Email client showing security certificate error on startup,High,Resolved,2024-01-26 14:00:00,2024-01-27 09:00:00
+Rajesh Natarajan,Operations,Email Access,Distribution list not working for operations department emails,Medium,Closed,2024-02-12 10:00:00,2024-02-14 14:00:00
+Rohit Gopalakrishnan,Marketing,Email Access,Email signature not displaying correctly in client reply threads,Low,Resolved,2024-02-22 09:30:00,2024-02-22 11:00:00
+Sunil Nambiar,Sales,Email Access,Customer emails incorrectly flagged and going to spam folder,High,Resolved,2024-03-12 10:00:00,2024-03-12 15:00:00
+Ashwin Thirumalai,Engineering,Email Access,Email inbox rules not working after mailbox migration project,Medium,Resolved,2024-03-28 14:00:00,2024-03-29 10:00:00
+Priya Krishnan,IT,Email Access,Email archive inaccessible causing concern over historical emails,High,Resolved,2024-04-15 09:00:00,2024-04-16 11:00:00
+Karthik Subramaniam,HR,Email Access,Shared mailbox permissions removed unexpectedly after AD update,Critical,Resolved,2024-05-10 08:00:00,2024-05-10 11:30:00
+Neha Thyagarajan,Finance,Email Access,Email calendar meeting invites not appearing in Outlook calendar,Medium,Resolved,2024-06-15 10:00:00,2024-06-15 14:00:00
+Kavya Ramaswamy,Operations,Email Access,Out of office auto-reply not sending responses to external contacts,Low,Closed,2024-07-20 14:00:00,2024-07-22 10:00:00
+Arun Balakrishnan,Marketing,Email Access,Email quota exceeded causing bounce-back messages to senders,High,Resolved,2024-08-25 09:00:00,2024-08-25 12:00:00
+Anitha Natarajan,Sales,Email Access,Email forwarding rule to team inbox not working properly,Medium,Open,2024-09-30 11:00:00,
+Vikram Chandrasekaran,IT,Email Access,Phishing email filter causing false positives on legitimate vendors,High,Resolved,2025-01-22 14:00:00,2025-01-23 09:00:00
+Sanjay Padmanabhan,IT,Email Access,Email delegation not working for executive assistant access,Medium,Resolved,2025-02-18 10:00:00,2025-02-19 10:00:00
+Deepa Sundaram,IT,Email Access,Email retention policy deleting messages before expected schedule,High,Resolved,2025-03-14 09:00:00,2025-03-15 10:00:00
+Pooja Venkataraman,HR,Email Access,New employee email account not provisioned after onboarding,High,Resolved,2025-01-28 09:00:00,2025-01-28 11:00:00
+Rajan Pillai,HR,Email Access,Email not working on new smartphone after MDM enrollment,Medium,Resolved,2025-02-24 10:00:00,2025-02-25 09:00:00
+Riya Pillai,Finance,Email Access,Finance team shared inbox missing after Exchange migration,Critical,Resolved,2025-03-20 08:00:00,2025-03-20 14:00:00
+Suresh Venkataraman,Finance,Email Access,Email search not returning recent messages from last 30 days,Low,Resolved,2025-01-15 10:00:00,2025-01-16 09:00:00
+Nisha Murthy,Operations,Email Access,Operations group email not receiving messages from external users,High,Resolved,2025-04-05 09:00:00,2025-04-06 10:00:00
+Shreya Balakrishnan,Marketing,Email Access,Marketing newsletter email template rendering broken in Outlook,Medium,Closed,2025-02-12 14:00:00,2025-02-13 10:00:00
+Sriram Venkatesh,IT,Network Connectivity,Intermittent internet disconnection in Conference Room B,High,Resolved,2024-01-13 10:00:00,2024-01-14 15:00:00
+Meena Subramaniam,HR,Network Connectivity,WiFi not accessible after HR department office relocation,Critical,Resolved,2024-01-19 09:00:00,2024-01-19 14:00:00
+Suresh Venkataraman,Finance,Network Connectivity,Network drive not accessible from remote work location,High,Closed,2024-01-28 14:00:00,2024-01-30 10:00:00
+Nisha Murthy,Operations,Network Connectivity,Network drops frequently in the warehouse floor area,Medium,Resolved,2024-02-15 10:00:00,2024-02-16 11:00:00
+Shreya Balakrishnan,Marketing,Network Connectivity,Slow network speed affecting video conferencing call quality,High,Resolved,2024-02-25 09:30:00,2024-02-26 14:00:00
+Varun Narayanan,Sales,Network Connectivity,Cannot connect to office internal network from home via ethernet,Medium,Resolved,2024-03-15 11:00:00,2024-03-15 16:00:00
+Nikhil Ananthakrishnan,Engineering,Network Connectivity,Development server unreachable due to network routing issue,Critical,Resolved,2024-03-30 09:00:00,2024-03-30 13:00:00
+Ananya Raghavan,IT,Network Connectivity,Network switch failure affecting entire second floor connectivity,Critical,Resolved,2024-04-18 08:00:00,2024-04-18 11:00:00
+Rajan Pillai,HR,Network Connectivity,VoIP desk phones disconnecting due to network instability,High,Resolved,2024-05-15 10:00:00,2024-05-16 09:00:00
+Riya Pillai,Finance,Network Connectivity,Bandwidth throttling affecting large financial data file transfers,High,Resolved,2024-06-20 14:00:00,2024-06-21 10:00:00
+Dinesh Raghavan,Operations,Network Connectivity,Network firewall blocking legitimate warehouse management application,Medium,Closed,2024-07-25 09:00:00,2024-07-27 14:00:00
+Divya Anand,Marketing,Network Connectivity,Guest WiFi portal not working for visiting client presentation,Low,Resolved,2024-08-28 11:00:00,2024-08-29 10:00:00
+Pallavi Raghunathan,Sales,Network Connectivity,VPN and internal network conflict causing high latency issues,High,In Progress,2024-10-02 10:00:00,
+Vikram Chandrasekaran,IT,Network Connectivity,Office VLAN segmentation causing application access issues,High,Resolved,2025-01-15 10:00:00,2025-01-16 14:00:00
+Sanjay Padmanabhan,IT,Network Connectivity,DNS resolution failing intermittently for internal domain names,Critical,Resolved,2025-02-10 08:00:00,2025-02-10 12:00:00
+Deepa Sundaram,IT,Network Connectivity,Network monitoring alerts showing packet loss on core switch,High,Resolved,2025-03-08 09:00:00,2025-03-09 10:00:00
+Manikandan Ravi,IT,Network Connectivity,New office wing has no network access points installed,Critical,Resolved,2025-04-01 10:00:00,2025-04-03 14:00:00
+Pooja Venkataraman,HR,Network Connectivity,HR floor WiFi dropping during large team video calls,Medium,Resolved,2025-01-20 14:00:00,2025-01-21 10:00:00
+Karthik Subramaniam,HR,Network Connectivity,Network printer unreachable after IP address range change,High,Resolved,2025-03-05 09:00:00,2025-03-06 10:00:00
+Arjun Krishnamurthy,Finance,Network Connectivity,Finance application server connection timing out periodically,High,Resolved,2025-02-18 10:00:00,2025-02-19 09:00:00
+Rajesh Natarajan,Operations,Network Connectivity,Operations floor WiFi insufficient for handheld scanner devices,Medium,Resolved,2025-01-25 09:00:00,2025-01-27 10:00:00
+Rohit Gopalakrishnan,Marketing,Network Connectivity,Marketing agency guest access portal not granting internet,Low,Resolved,2025-03-22 14:00:00,2025-03-23 09:00:00
+Karthik Subramanian,IT,Hardware Request,Request for additional monitor for dual-screen productivity setup,Low,Closed,2024-01-17 10:00:00,2024-01-24 14:00:00
+Sunita Nair,HR,Hardware Request,New ergonomic keyboard and mouse required for medical condition,Medium,Resolved,2024-01-23 09:00:00,2024-01-30 10:00:00
+Arjun Krishnamurthy,Finance,Hardware Request,Barcode scanner required for finance asset tracking project,High,Resolved,2024-02-01 14:00:00,2024-02-08 15:00:00
+Rajesh Natarajan,Operations,Hardware Request,Industrial-grade printer needed for warehouse documentation printing,High,Resolved,2024-02-16 10:00:00,2024-02-23 14:00:00
+Rohit Gopalakrishnan,Marketing,Hardware Request,Webcam upgrade needed for improved client video presentations,Medium,Closed,2024-03-05 09:00:00,2024-03-12 10:00:00
+Sunil Nambiar,Sales,Hardware Request,Portable projector required for off-site client meeting demos,Medium,Resolved,2024-03-18 14:00:00,2024-03-25 09:00:00
+Ashwin Thirumalai,Engineering,Hardware Request,High-performance workstation needed for machine learning model training,Critical,Resolved,2024-04-05 09:00:00,2024-04-12 14:00:00
+Priya Krishnan,IT,Hardware Request,UPS replacement needed for server room critical equipment protection,Critical,Resolved,2024-04-22 08:00:00,2024-04-26 10:00:00
+Karthik Subramaniam,HR,Hardware Request,Digital signature pad required for HR document signing workflow,Medium,Resolved,2024-05-20 10:00:00,2024-05-27 14:00:00
+Neha Thyagarajan,Finance,Hardware Request,Smart card reader needed for secure financial system access,High,Closed,2024-06-25 09:00:00,2024-07-02 10:00:00
+Kavya Ramaswamy,Operations,Hardware Request,Handheld scanner needed for inventory management counting process,Medium,Resolved,2024-07-30 14:00:00,2024-08-06 10:00:00
+Arun Balakrishnan,Marketing,Hardware Request,Conference room microphone and speaker system upgrade request,Low,Pending,2024-09-03 10:00:00,
+Anitha Natarajan,Sales,Hardware Request,Laptop bag and travel accessories for field sales team members,Low,Resolved,2024-10-08 09:00:00,2024-10-15 14:00:00
+Vikram Chandrasekaran,IT,Hardware Request,Additional network switches needed for new office expansion floor,High,Resolved,2025-01-10 10:00:00,2025-01-17 14:00:00
+Sanjay Padmanabhan,IT,Hardware Request,Replacement laptop required after hardware failure for IT staff,High,Resolved,2025-02-06 09:00:00,2025-02-08 10:00:00
+Deepa Sundaram,IT,Hardware Request,Docking station needed for hybrid work setup at workstation,Medium,Resolved,2025-03-12 10:00:00,2025-03-14 09:00:00
+Manikandan Ravi,IT,Hardware Request,Server RAM upgrade needed to handle increased application load,Critical,Open,2025-04-18 10:00:00,
+Pooja Venkataraman,HR,Hardware Request,Standing desk requested for ergonomic health requirement reasons,Medium,Resolved,2025-02-03 10:00:00,2025-02-10 14:00:00
+Rajan Pillai,HR,Hardware Request,Headset required for HR team remote counselling call sessions,Low,Resolved,2025-03-08 09:00:00,2025-03-10 10:00:00
+Riya Pillai,Finance,Hardware Request,Second monitor needed for finance analyst dual-screen workflow,Medium,Closed,2025-01-20 14:00:00,2025-01-27 10:00:00
+Dinesh Raghavan,Operations,Hardware Request,Rugged tablet needed for warehouse floor operations team,High,Resolved,2025-02-20 09:00:00,2025-02-25 14:00:00
+Shreya Balakrishnan,Marketing,Hardware Request,Camera and lighting kit needed for marketing content creation,Medium,Resolved,2025-03-25 10:00:00,2025-03-28 09:00:00
+Varun Narayanan,Sales,Hardware Request,Mobile hotspot device needed for field sales internet access,High,Resolved,2025-01-14 09:00:00,2025-01-17 10:00:00
+Pallavi Raghunathan,Sales,Hardware Request,Presentation clicker and laser pointer for sales demo kit,Low,Resolved,2025-04-10 14:00:00,2025-04-11 09:00:00
+Swathi Krishnamurthy,Engineering,Hardware Request,Additional RAM upgrade needed for faster code compilation times,High,In Progress,2025-03-28 10:00:00,
+Sriram Narayanan,Engineering,Hardware Request,GPU server request for AI and data science model training,Critical,Open,2025-04-20 10:00:00,
+Bhavna Venkatesh,Engineering,VPN Issue,VPN access to engineering lab servers not working remotely,High,Resolved,2024-11-05 09:00:00,2024-11-06 10:00:00
+Ananya Raghavan,IT,VPN Issue,VPN client missing after IT-managed device enrollment reset,Medium,Resolved,2024-12-08 10:00:00,2024-12-09 09:00:00
+Dinesh Raghunathan,Sales,VPN Issue,Cannot access sales portal over VPN from branch office,High,Resolved,2025-05-02 09:00:00,2025-05-03 10:00:00
+Preethi Rajan,Engineering,Password Reset,CI pipeline bot account password expired causing build failures,Critical,Resolved,2024-11-12 08:00:00,2024-11-12 10:30:00
+Sriram Narayanan,Engineering,Password Reset,Git server password reset needed after security rotation,High,Resolved,2025-01-06 10:00:00,2025-01-06 13:00:00
+Bhavna Venkatesh,Engineering,Password Reset,Password manager master key recovery for engineering team,High,Resolved,2025-04-22 09:00:00,2025-04-22 14:00:00
+Dinesh Raghunathan,Sales,Password Reset,Sales portal password locked after incorrect attempts at login,Medium,Resolved,2024-11-18 10:00:00,2024-11-18 11:30:00
+Ananya Raghavan,IT,Password Reset,New joinee onboarding password not set correctly in AD,High,Resolved,2024-12-15 09:00:00,2024-12-15 10:30:00
+Bhavna Venkatesh,Engineering,Software Installation,Version control GUI client installation failing on Linux laptop,Medium,Resolved,2024-11-08 10:00:00,2024-11-09 09:00:00
+Sriram Narayanan,Engineering,Software Installation,Performance profiling tools not installing on engineering server,High,Resolved,2025-03-28 09:00:00,2025-03-29 10:00:00
+Dinesh Raghunathan,Sales,Software Installation,Sales proposal tool upgrade failing with expired certificate,High,Resolved,2024-10-25 14:00:00,2024-10-26 10:00:00
+Swathi Krishnamurthy,Engineering,Software Installation,Static analysis tool installation blocked by security policy,Medium,Closed,2024-12-10 10:00:00,2024-12-12 09:00:00
+Ananya Raghavan,IT,Software Installation,Remote monitoring agent deployment failing on workstations,High,Resolved,2025-05-05 09:00:00,2025-05-06 10:00:00
+Bhavna Venkatesh,Engineering,Laptop Issue,Laptop Bluetooth not pairing with external keyboard or mouse,Low,Resolved,2024-11-20 10:00:00,2024-11-21 09:00:00
+Sriram Narayanan,Engineering,Laptop Issue,Engineering laptop NVMe drive showing health warnings,Critical,Resolved,2025-01-10 08:00:00,2025-01-11 14:00:00
+Dinesh Raghunathan,Sales,Laptop Issue,Laptop not recognising external webcam during sales calls,Medium,Resolved,2024-10-18 14:00:00,2024-10-19 10:00:00
+Swathi Krishnamurthy,Engineering,Laptop Issue,Laptop memory insufficient for running multiple VMs at once,High,Resolved,2025-04-25 09:00:00,2025-04-26 10:00:00
+Kavya Ramaswamy,Operations,Laptop Issue,Laptop assigned to operations lead has broken spacebar key,Medium,Resolved,2024-12-05 10:00:00,2024-12-06 09:00:00
+Bhavna Venkatesh,Engineering,Email Access,Team distribution list not including new engineering members,Medium,Resolved,2024-11-25 09:00:00,2024-11-26 10:00:00
+Sriram Narayanan,Engineering,Email Access,Email notifications from CI system flagged as spam,Low,Resolved,2025-02-05 10:00:00,2025-02-06 09:00:00
+Dinesh Raghunathan,Sales,Email Access,Customer reply-all emails not reaching entire sales thread,High,Resolved,2024-10-28 14:00:00,2024-10-29 10:00:00
+Swathi Krishnamurthy,Engineering,Email Access,Email alias for engineering team not forwarding correctly,Medium,Closed,2025-04-28 09:00:00,2025-04-30 10:00:00
+Ananya Raghavan,IT,Email Access,IT support mailbox not routing tickets to correct queue,Critical,Resolved,2024-12-20 08:00:00,2024-12-20 12:00:00
+Bhavna Venkatesh,Engineering,Network Connectivity,Engineering lab network isolated after firewall rule update,Critical,Resolved,2024-11-30 09:00:00,2024-11-30 15:00:00
+Sriram Narayanan,Engineering,Network Connectivity,Kubernetes node unreachable due to network segmentation issue,Critical,Resolved,2025-03-06 10:00:00,2025-03-06 16:00:00
+Dinesh Raghunathan,Sales,Network Connectivity,Branch office internet down affecting sales calls all morning,High,Resolved,2024-10-08 09:00:00,2024-10-08 14:00:00
+Swathi Krishnamurthy,Engineering,Network Connectivity,CI server cannot reach external package repository through proxy,Medium,Resolved,2025-04-15 10:00:00,2025-04-16 09:00:00
+Ananya Raghavan,IT,Network Connectivity,Office building main router reboot needed after power outage,High,Resolved,2024-12-28 07:00:00,2024-12-28 09:30:00

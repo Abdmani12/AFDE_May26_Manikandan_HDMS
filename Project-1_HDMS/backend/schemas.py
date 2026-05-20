@@ -70,3 +70,71 @@ class EmailCheckRequest(BaseModel):
 
 class EmailCheckResponse(BaseModel):
     exists: bool
+
+
+# ── Analytics Schemas ─────────────────────────────────────────────────────────
+
+class CategoryCount(BaseModel):
+    category: str
+    count: int
+
+class PriorityCount(BaseModel):
+    priority: str
+    count: int
+
+class DepartmentCount(BaseModel):
+    department: str
+    count: int
+
+class MonthlyTrend(BaseModel):
+    month: str
+    total_tickets: int
+    resolved_tickets: int
+    avg_resolution_days: Optional[float]
+
+class AnalyticsOverview(BaseModel):
+    total_tickets: int
+    open_tickets: int
+    in_progress_tickets: int
+    resolved_tickets: int
+    closed_tickets: int
+    pending_tickets: int
+    avg_resolution_days: Optional[float]
+    historical_records: int
+
+class HistoricalTicketResponse(BaseModel):
+    id: int
+    employee_name: str
+    department: str
+    issue_category: str
+    description: str
+    priority: str
+    status: str
+    created_at: datetime
+    resolved_at: Optional[datetime]
+    resolution_time_days: Optional[float]
+    loaded_at: Optional[datetime]
+
+    class Config:
+        from_attributes = True
+
+
+# ── ETL Schemas ───────────────────────────────────────────────────────────────
+
+class ETLRunResponse(BaseModel):
+    id: int
+    source_file: str
+    status: str
+    records_extracted: Optional[int]
+    records_transformed: Optional[int]
+    records_loaded: Optional[int]
+    duplicates_removed: Optional[int]
+    error_message: Optional[str]
+    started_at: Optional[datetime]
+    completed_at: Optional[datetime]
+
+    class Config:
+        from_attributes = True
+
+class ETLRunRequest(BaseModel):
+    clear_existing: bool = True
