@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import { BookOpen, Users, ArrowLeftRight, Search, Library, Menu, X } from 'lucide-react'
+import { BookOpen, Users, ArrowLeftRight, Search, Library, Menu, X, BarChart2 } from 'lucide-react'
 import { useState } from 'react'
 
 const navItems = [
@@ -7,6 +7,7 @@ const navItems = [
   { to: '/borrowers', icon: Users, label: 'Members' },
   { to: '/transactions', icon: ArrowLeftRight, label: 'Borrow / Return' },
   { to: '/search', icon: Search, label: 'Search' },
+  { to: '/analytics', icon: BarChart2, label: 'Analytics' },
 ]
 
 export default function Navbar() {

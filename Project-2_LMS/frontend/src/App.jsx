@@ -6,6 +6,7 @@ import Books from './pages/Books'
 import Borrowers from './pages/Borrowers'
 import Transactions from './pages/Transactions'
 import Search from './pages/Search'
+import Analytics from './pages/Analytics'
 
 function AppLayout() {
   return (
@@ -18,6 +19,7 @@ function AppLayout() {
           <Route path="/borrowers" element={<Borrowers />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/analytics" element={<Analytics />} />
         </Routes>
       </main>
     </div>

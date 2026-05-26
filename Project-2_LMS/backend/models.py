@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Float
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from database import Base
@@ -39,3 +39,37 @@ class Transaction(Base):
 
     book = relationship("Book", back_populates="transactions")
     borrower = relationship("Borrower", back_populates="transactions")
+
+
+# ── Analytics Tables ──────────────────────────────────────────────
+
+class AnalyticsBookPopularity(Base):
+    __tablename__ = "analytics_book_popularity"
+
+    id           = Column(Integer, primary_key=True, index=True)
+    book_id      = Column(Integer, nullable=False)
+    title        = Column(String, nullable=False)
+    author       = Column(String, nullable=False)
+    category     = Column(String, nullable=False)
+    borrow_count = Column(Integer, default=0)
+
+
+class AnalyticsMonthlyTrend(Base):
+    __tablename__ = "analytics_monthly_trend"
+
+    id            = Column(Integer, primary_key=True, index=True)
+    year          = Column(Integer, nullable=False)
+    month         = Column(Integer, nullable=False)
+    period_label  = Column(String, nullable=False)
+    total_borrows = Column(Integer, default=0)
+    total_returns = Column(Integer, default=0)
+
+
+class AnalyticsCategoryStats(Base):
+    __tablename__ = "analytics_category_stats"
+
+    id                 = Column(Integer, primary_key=True, index=True)
+    category           = Column(String, nullable=False)
+    total_books        = Column(Integer, default=0)
+    total_borrows      = Column(Integer, default=0)
+    currently_borrowed = Column(Integer, default=0)

@@ -17,26 +17,34 @@ def get_borrowers(db: Session = Depends(get_db)):
 def get_borrower(borrower_id: int, db: Session = Depends(get_db)):
     borrower = crud.get_borrower(db, borrower_id)
     if not borrower:
-        raise HTTPException(status_code=404, detail="Borrower not found")
+        raise HTTPException(status_code=404, detail="Member not found")
     return borrower
 
 
 @router.post("/", response_model=schemas.Borrower, status_code=201)
 def create_borrower(borrower: schemas.BorrowerCreate, db: Session = Depends(get_db)):
-    return crud.create_borrower(db, borrower)
+    try:
+        return crud.create_borrower(db, borrower)
+    except ValueError as e:
+        raise HTTPException(status_code=409, detail=str(e))
 
 
 @router.put("/{borrower_id}", response_model=schemas.Borrower)
 def update_borrower(borrower_id: int, borrower: schemas.BorrowerUpdate, db: Session = Depends(get_db)):
-    updated = crud.update_borrower(db, borrower_id, borrower)
+    try:
+        updated = crud.update_borrower(db, borrower_id, borrower)
+    except ValueError as e:
+        raise HTTPException(status_code=409, detail=str(e))
     if not updated:
-        raise HTTPException(status_code=404, detail="Borrower not found")
+        raise HTTPException(status_code=404, detail="Member not found")
     return updated
 
 
 @router.delete("/{borrower_id}")
 def delete_borrower(borrower_id: int, db: Session = Depends(get_db)):
-    deleted = crud.delete_borrower(db, borrower_id)
-    if not deleted:
-        raise HTTPException(status_code=404, detail="Borrower not found")
-    return {"message": "Borrower deleted successfully"}
+    deleted, error = crud.delete_borrower(db, borrower_id)
+    if error == "Borrower not found":
+        raise HTTPException(status_code=404, detail=error)
+    if error:
+        raise HTTPException(status_code=400, detail=error)
+    return {"message": "Member removed successfully"}

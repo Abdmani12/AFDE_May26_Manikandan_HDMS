@@ -27,4 +27,12 @@ export const returnBook = (data) => api.post('/return', data)
 // Search
 export const searchBooks = (q) => api.get('/search', { params: { q } })
 
+// Analytics
+export const getPopularBooks     = (limit = 10) => api.get('/analytics/popular-books', { params: { limit } })
+export const getCategoryStats    = ()            => api.get('/analytics/category-stats')
+export const getMonthlyTrends    = ()            => api.get('/analytics/monthly-trends')
+export const getOverdue          = ()            => api.get('/analytics/overdue')
+export const getAnalyticsSummary = ()            => api.get('/analytics/summary')
+export const runETL              = ()            => api.post('/analytics/run-etl')
+
 export default api

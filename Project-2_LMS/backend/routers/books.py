@@ -23,12 +23,18 @@ def get_book(book_id: int, db: Session = Depends(get_db)):
 
 @router.post("/", response_model=schemas.Book, status_code=201)
 def create_book(book: schemas.BookCreate, db: Session = Depends(get_db)):
-    return crud.create_book(db, book)
+    try:
+        return crud.create_book(db, book)
+    except ValueError as e:
+        raise HTTPException(status_code=409, detail=str(e))
 
 
 @router.put("/{book_id}", response_model=schemas.Book)
 def update_book(book_id: int, book: schemas.BookUpdate, db: Session = Depends(get_db)):
-    updated = crud.update_book(db, book_id, book)
+    try:
+        updated = crud.update_book(db, book_id, book)
+    except ValueError as e:
+        raise HTTPException(status_code=409, detail=str(e))
     if not updated:
         raise HTTPException(status_code=404, detail="Book not found")
     return updated
@@ -36,7 +42,9 @@ def update_book(book_id: int, book: schemas.BookUpdate, db: Session = Depends(ge
 
 @router.delete("/{book_id}")
 def delete_book(book_id: int, db: Session = Depends(get_db)):
-    deleted = crud.delete_book(db, book_id)
-    if not deleted:
-        raise HTTPException(status_code=404, detail="Book not found")
+    deleted, error = crud.delete_book(db, book_id)
+    if error == "Book not found":
+        raise HTTPException(status_code=404, detail=error)
+    if error:
+        raise HTTPException(status_code=400, detail=error)
     return {"message": "Book deleted successfully"}
